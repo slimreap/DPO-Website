@@ -18,33 +18,58 @@
 
         .logo {
             max-width: 10%;
+            max-height: 15%
+        }
+        .logo-w {
+            max-width: 10%;
         }
 
     </style>
 </head>
 
 <body>
-    
-    <header class="navbar navbar-expand-lg crimson">
+    {{-- navbar --}}
+    <nav class="navbar navbar-expand-md crimson">
+        <div class="container-fluid">
 
-<nav class="d-flex flex-column container-xxl" >
+            <span class="d-inline-flex">
+                <img src="storage/images/WMSU.png" class="logo" alt="">
+                
+                <div class="flex-column align-baseline">
+                    <p class="">Western Mindanao State University</p>
+                
+                    <p class="">Data Protection Office</p>
+                </div>
 
-    <span class="">
-        <img src="storage/images/WMSU.png" class="logo" alt="" srcset="">
+
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target='#navmenu'>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </span>
 
-        <div class="">
 
-            <a href="" class="navbar-brand fs-6 p-1 links">Privacy Policies</a>
-            <a href="" class="navbar-brand fs-6 hover: p-1 links">Contact DPO</a>
-            <a href="" class="navbar-brand fs-6 hover: p-1 links">Info</a>
-            <a href="" class="navbar-brand fs-6 hover: p-1 links">Advisory Opinions</a>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Privacy Policies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Info Section</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Contact DPO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Advisory Opinions</a>
+                </li>
+            </ul>
         </div>
 
-</nav>
-    </header>
+        </div>
+    </nav>
  
     
-    {{-- <script src="{{asset('js/app.js')}}"></script> --}}
+    <script src="{{asset('js/app.js')}}"></script>
 </body>
 </html>
