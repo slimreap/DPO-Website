@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-@charset "UTF-8"; /*!
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap);
+@charset "UTF-8";
+/*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
@@ -10820,5 +10822,5 @@ textarea.form-control-lg {
   }
 }
 .crimson {
-  background-color: #842029;
+  background-color: #DC143C;
 }

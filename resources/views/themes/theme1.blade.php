@@ -1,75 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ URL::asset('css/app.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css" >
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>Wmsu DPO</title>
-    <style>
-        .crimson {
-            background-color: #DC143C; 
-        }
 
-        .links:hover {
-            color: white;
-            opacity: 0.5;
-        }
-
-        .logo {
-            max-width: 10%;
-            max-height: 15%
-        }
-        .logo-w {
-            max-width: 10%;
-        }
-
-    </style>
 </head>
 
 <body>
     {{-- navbar --}}
-    <nav class="navbar navbar-expand-md crimson">
-        <div class="container-fluid">
+{{-- sidebar nav --}}
 
-            <span class="d-inline-flex">
-                <img src="storage/images/WMSU.png" class="logo" alt="">
-                
-                <div class="flex-column align-baseline">
-                    <p class="">Western Mindanao State University</p>
-                
-                    <p class="">Data Protection Office</p>
-                </div>
-
-
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target='#navmenu'>
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<nav class="sidebar crimson">
+    <header>
+        <div class="image-text">
+            <span class="image">
+                <img src="storage/images/WMSU.png" alt="">
             </span>
 
-
-
-        <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a href="" class="nav-link">Privacy Policies</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Info Section</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Contact DPO</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Advisory Opinions</a>
-                </li>
-            </ul>
+            <div class="text header-text">
+                <span class="name">
+                    Western Mindanao State University
+                </span>
+                <span class="school">
+                    Data Protection Office
+                </span>
+            </div>
         </div>
 
-        </div>
-    </nav>
- 
-    
-    <script src="{{asset('js/app.js')}}"></script>
+        <box-icon type='solid' name='hand-right'></box-icon>
+    </header>
+</nav>
+
 </body>
 </html>
