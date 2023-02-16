@@ -1,3 +1,5 @@
+@extends('layouts.app')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +10,15 @@
     <title>Document</title>
 </head>
 <body>
-       <button class="btn btn-primary">sasss</button>
+    @if (Auth::user())
+    {{Auth::user()->name}}
+    <br>
+
+    @endif
+
+
+<a href="{{route('logout')}}">logout</a>
+
+</form>
 </body>
 </html>
